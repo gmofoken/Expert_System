@@ -1,7 +1,14 @@
 <?PHP 
- print("EXPERT SYSTEM");
+If(!$_POST["filepath"])
+{
+	print_r("File rquired to run program");
+	return;
+}
+ print("Based on your ");
 echo "<br \>";
-$input = file_get_contents("input.txt");
+$input = file_get_contents($_POST
+	["filepath"]);
+	echo $_POST["filepath"];
 $raw_input = explode("\n", $input);
 $tosolve = array();
 foreach ($raw_input as $select){

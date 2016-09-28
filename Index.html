@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>ExpertSysytem</title>
+		<link rel="stylesheet" href="ESystem.css">
+	</head>
+		<body>
+		<div id="main">
+			<div id="header">
+				<div>
+					<h1><a href="https://en.wikipedia.org/wiki/Expert_system">Expert System</a></h1>
+				</div>
+				<div>
+					<p></p>
+				</div>		
+			</div>
+			<div id="navbar">
+			</div>
+			<div id="dispbox">
+				<div id="addfile">
+					 <form action="ExpertSystem.php" method="post">
+						 <label for="path"><tag>File Path</tag></label>
+						<input type="text" id="path" value="" name="filepath" placeholder="e.g ~/Desktop/tmp/instr.txt">
+						<input type="submit" name="submit">
+					</form>
+				</div>
+				<div id="screen">
+
+				</div>
+			</div>
+			<div id="foot">
+				<h2>How it works!</h2>
+				<p>By default, all facts are false, and can only be made true by the initial facts statement,
+					or by application of a rule. A fact can only be undetermined if the ruleset is ambiguous,
+					for example if I say "A is true, also if A then B or C", then B and C are undetermined.
+					If there is an error in the input, for example, a contradiction in the facts, or a syntax
+					error, the program will inform the user of the problem.
+				</p>
+				<h3> The "File Path" field</h3>
+				<p>The "File Path" field : eneter the required instruction/fact file location togather with its name
+				and click the submit button</p>
+				<p><b>NB!</b>...For a more comprihansive document please refer to the subject, expertsystem.pdf</p>	
+			</div>
+		</div>
+		<script></script>
+	</body>
+</html>
